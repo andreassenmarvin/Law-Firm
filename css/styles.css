@@ -562,6 +562,10 @@ body {
     font-weight: bold;
 }
 
+.service-title {
+    text-align: center;
+}
+
 .service .service-item {
     position: relative;
     width: 100%;
