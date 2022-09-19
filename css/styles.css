@@ -23,6 +23,10 @@ body {
     overflow: hidden;
 }
 
+.top-bar .logo a {
+    text-decoration: none;
+}
+
 .top-bar .logo h1 {
     margin: 0;
     color: #aa9166;
@@ -204,6 +208,10 @@ body {
     }
 }
 
+.navbar {
+    background-color: red !important;
+}
+
 .nav-bar {
     position: relative;
     padding: 20px 0;
@@ -266,7 +274,7 @@ body {
 
     .nav-bar,
     .nav-bar .navbar {
-        background: #121518 !important;
+        background: #1e1e1f !important;
     }
 
     .nav-bar a.nav-link {
@@ -427,4 +435,49 @@ body {
 .carousel .animated {
     -webkit-animation-duration: 1.5s;
     animation-duration: 1.5s;
+}
+
+.about {
+    position: relative;
+    width: 100%;
+    padding: 45px 0;
+}
+
+.about .section-header {
+    margin-bottom: 30px;
+}
+
+.about .about-img {
+    position: relative;
+    height: 100%;
+    padding: 10px;
+    background: #121518;
+}
+
+.about .about-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about .about-text p {
+    font-size: 18px;
+    letter-spacing: 0.03em;
+}
+
+@media (max-width: 992px) {
+    .about .about-img img {
+        height: 360px;
+    }
+
+    .about .about-text p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .about .about-img {
+        margin-bottom: 30px;
+        height: auto;
+    }
 }
