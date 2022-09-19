@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400&display=swap');
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
     box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -23,7 +26,7 @@ body {
 .top-bar .logo h1 {
     margin: 0;
     color: #aa9166;
-    font-size: 21px;
+    font-size: 23px;
     font-weight: bold;
 }
 
@@ -148,11 +151,11 @@ body {
     }
 
     .top-bar .text h2 {
-        font-size: 16px;
+        font-size: 17px;
     }
     
     .top-bar .text p {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .ct-language {
@@ -166,7 +169,7 @@ body {
     }
 
     .top-bar .logo h1 {
-        font-size: 19px;
+        font-size: 21px;
     }
 
     .top-bar .text h2 {
@@ -184,11 +187,11 @@ body {
 
 @media (max-width: 474px) {
     .top-bar .logo {
-        padding: 8px 0;
+        padding: 7px 0;
     }
 
     .top-bar .logo h1 {
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .text {
@@ -198,5 +201,97 @@ body {
     .ct-language {
         font-size: 11px;
         margin: auto;
+    }
+}
+
+.nav-bar {
+    position: relative;
+    padding: 20px 0;
+    transition: .3s;
+}
+
+.nav-bar.nav-sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+    z-index: 999;
+}
+
+.nav-bar .navbar {
+    height: 100%;
+    padding: 0;
+}
+
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    padding: 10px 25px 8px 25px;
+    color: #ffffff;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #aa9166;
+    transition: none;
+}
+
+.nav-bar .dropdown-menu {
+    margin-top: 0;
+    border: 0;
+    border-radius: 0;
+    background: #f8f9fa;
+}
+
+.nav-bar .btn {
+    color: #ffffff;
+    border: 2px solid #aa9166;
+    border-radius: 0;
+}
+
+.nav-bar .btn:hover {
+    background: #aa9166;
+}
+
+@media (min-width: 992px) {
+    .nav-bar {
+        padding: 20px 60px;
+    }
+    
+    .nav-bar.nav-sticky {
+        padding: 10px 60px;
+    }
+    
+    .nav-bar,
+    .nav-bar .navbar {
+        background: #121518 !important;
+    }
+    
+    .nav-bar a.nav-link {
+        padding: 8px 15px;
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+}
+
+@media (max-width: 991.98px) {   
+    .nav-bar,
+    .nav-bar .navbar {
+        padding: 3px 0;
+        background: #121518 !important;
+    }
+    
+    .nav-bar a.nav-link {
+        padding: 5px;
+    }
+    
+    .nav-bar .dropdown-menu {
+        box-shadow: none;
+    }
+    
+    .nav-bar .btn {
+        display: none;
     }
 }
