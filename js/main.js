@@ -27,4 +27,10 @@ $(function () {
         window.location = $(this).attr('href');
         location.reload();
     });
+
+    $(".service-show").click(function () {
+        $(".service-hide").slideToggle();
+        $(".service-show").slideToggle();
+        $("#service-dots").hide();
+    })
 })

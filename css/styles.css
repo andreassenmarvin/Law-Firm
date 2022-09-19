@@ -481,3 +481,69 @@ body {
         height: auto;
     }
 }
+
+.service {
+    position: relative;
+    width: 100%;
+    padding: 45px 0 15px 0;
+}
+
+.service h2 {
+    margin-bottom: 40px;
+}
+
+.service .service-item {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background: #121518;
+    margin-bottom: 30px;
+}
+
+.service .service-icon {
+    height: 200px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000000;
+}
+
+.service .service-icon i {
+    width: 100px;
+    height: 100px;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 60px;
+    color: #aa9166;
+    background: #121518;
+    transition: .5s;
+}
+
+.service .service-item:hover .service-icon i {
+    margin-top: -15px;
+}
+
+.service .service-item h3 {
+    margin: 0;
+    padding: 25px 15px 15px 15px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #aa9166;
+}
+
+.service .service-item p {
+    margin: 0;
+    color: #999999;
+    padding: 0 25px 25px 25px;
+    font-size: 18px;
+}
+
+.service-hide {
+    display: none;
+}
+
+.service-show {
+    color: #aa9166;
+    cursor: pointer;
+}
