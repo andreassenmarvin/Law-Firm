@@ -697,6 +697,68 @@ body {
     object-fit: cover;
 }
 
+.contact {
+    position: relative;
+    width: 100%;
+    padding: 45px 0 15px 0;
+}
+
+.contact h2 {
+    font-weight: bold;
+}
+
+.contact .contact-info {
+    position: relative;
+    margin-bottom: 30px;
+    width: 100%;
+    padding: 30px;
+    background: #121518;
+}
+
+.contact .contact-item {
+    position: relative;
+    margin-bottom: 30px;
+    padding: 30px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    border: 2px solid #aa9166;
+}
+
+.contact .contact-item i {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #aa9166;
+    border: 2px solid #aa9166;
+}
+
+.contact .contact-text {
+    position: relative;
+    width: auto;
+    padding-left: 15px;
+}
+
+.contact .contact-text h2 {
+    color: #aa9166;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.contact .contact-text p {
+    margin: 0;
+    color: #999999;
+    font-size: 16px;
+}
+
+.contact .contact-item:last-child {
+    margin-bottom: 0;
+}
+
 .footer-section {
     position: relative;
     z-index: 2;
