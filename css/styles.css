@@ -253,6 +253,10 @@ body {
     background: #f8f9fa;
 }
 
+.nav-logo {
+    width: 100px;
+}
+
 .nav-bar .btn {
     color: #ffffff;
     border: 2px solid #aa9166;
@@ -296,6 +300,10 @@ body {
         padding: 5px;
     }
 
+    .nav-logo {
+        width: 85px;
+    }
+
     .nav-bar .dropdown-menu {
         box-shadow: none;
     }
@@ -303,6 +311,13 @@ body {
     .nav-bar .btn {
         display: none;
     }
+}
+
+@media (max-width: 575.98px) {
+    .nav-logo {
+        width: 75px;
+    }
+
 }
 
 .carousel {
